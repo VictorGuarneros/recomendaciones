@@ -1,30 +1,18 @@
-package mx.com.kafka.recomendaciones.model;
+package mx.com.kafka.recomendaciones.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity
-public class Libro {
-    @Id
-    @GeneratedValue
-    private Integer idLibro;
-    @NotEmpty
-    @Column(unique=true)
-    private String isbn;
+public class LibroDto {
     @NotEmpty
     private String autor;
     @Positive
