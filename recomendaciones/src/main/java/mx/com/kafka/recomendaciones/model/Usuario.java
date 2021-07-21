@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import mx.com.kafka.recomendaciones.constant.Role;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -32,4 +33,24 @@ public class Usuario {
     private String password;
     @ManyToMany
     private List <Genero> generos;
+    @Builder.Default
+    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
+    private boolean expiredAccount = false;
+
+    @Builder.Default
+    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
+    private boolean lockedAccount = false;
+
+    @Builder.Default
+    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
+    private boolean expiredCredentials = false;
+
+    @Builder.Default
+    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
+    private boolean enabled = false;
+
+    @NotEmpty
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role;
 }
