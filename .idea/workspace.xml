@@ -1,13 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf80b87b-23a7-4f55-aad3-c787be6f77fa" name="Default Changelist" comment="" />
+    <list default="true" id="cf80b87b-23a7-4f55-aad3-c787be6f77fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/OauthAccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/OauthRefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/UsuarioRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/Yomogi-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/home_rec.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/home_usr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/registro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/sesion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/signin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/bootstrap-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/fondo_inicio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/fondo_principal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/inicio1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/inicio2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/img/logoclr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/integrar-bp/home_rec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/integrar-bp/home_usr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/integrar-bp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/integrar-bp/registro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/integrar-bp/sesion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/home_rec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/home_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/GeneroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/GeneroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/LibroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/LibroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/GeneroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/GeneroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/LibroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/LibroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/UsuarioLibroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/UsuarioLibroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/UsuarioRepositorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/LibroDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/LibroDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioLibro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/resources/data.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectId" id="1uoKOsIB1jwxAuUjS7oZg3V59Q3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,7 +104,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recomendaciones" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -27,5 +117,17 @@
       <updated>1625326473104</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

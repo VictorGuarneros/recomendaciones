@@ -13,16 +13,26 @@ import javax.validation.constraints.Positive;
 @NoArgsConstructor
 @Builder
 public class LibroDto {
+
+    @NotEmpty
+    private String isbn;
+
     @NotEmpty
     private String autor;
+
     @Positive
     private Integer anioPublicacion;
+
     @NotEmpty
     private String titulo;
+
     @NotEmpty
     private String imagenUrl;
+
     @NotEmpty
     private String idioma;
+
     @NotEmpty
     private String formato;
+
 }

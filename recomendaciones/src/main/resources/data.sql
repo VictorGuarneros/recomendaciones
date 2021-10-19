@@ -6,8 +6,8 @@ INSERT INTO genero(genero) VALUES ('terror');
 INSERT INTO libro_genero(id_libro, id_genero) VALUES(1, 1);
 INSERT INTO libro_genero(id_libro, id_genero) VALUES(1, 2);
 
-INSERT INTO usuario(correo, edad, nombre, password, role)
-VALUES ('admin@gmail.com', 25, 'Victor Guarneros', '$2a$12$m6FEylOZEBLuxeH5i1pt9.R72LrjIAI1rDb6qRF1rxOQXQbm2IU76', 'ADMINISTRATOR');
+INSERT INTO usuario(correo, edad, nombre, password, role, enabled)
+VALUES ('admin@gmail.com', 25, 'Victor Guarneros', '$2a$12$yxm5UiGOfcKCMNqef/ks1e/PIy2JSex8evS1BLCrQQY.WsCg3HJti', 'ADMINISTRATOR', 1);
 
 
 INSERT INTO usuario_genero(id_usuario, id_genero) VALUES(1, 1);

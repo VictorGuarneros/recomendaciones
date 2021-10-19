@@ -20,21 +20,21 @@ import java.io.Serializable;
 public class UsuarioLibro implements Serializable {
 
     private static final long serialVersionUID = -7106820489523351253L;
+
     @EmbeddedId
     private UsuarioLibroId id;
 
     @NotNull
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @MapsId("id_usuario")
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
 
     @NotNull
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @MapsId("id_libro")
     @JoinColumn(name = "id_libro")
     private Libro libro;
-
 
     @Max(10)
     @Min(1)

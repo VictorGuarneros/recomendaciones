@@ -1,4 +1,5 @@
 package mx.com.kafka.recomendaciones.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -32,7 +33,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http//
                 .authorizeRequests()//
-                .antMatchers(HttpMethod.POST, "/oauth/**").permitAll() //
+                .antMatchers(HttpMethod.POST, "/oauth/**", "/usuarios").permitAll() //
+                .antMatchers(HttpMethod.POST, "/libros", "/generos").hasAuthority("ADMINISTRATOR") //
+                .antMatchers(HttpMethod.PUT, "/libros", "/generos").hasAuthority("ADMINISTRATOR") //
                 .anyRequest().authenticated() //
                 .and().cors().configurationSource(getConfigurationSource());
     }

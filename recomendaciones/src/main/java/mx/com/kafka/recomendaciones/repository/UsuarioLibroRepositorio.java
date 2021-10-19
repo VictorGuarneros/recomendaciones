@@ -1,4 +1,4 @@
-package mx.com.kafka.recomendaciones.dao;
+package mx.com.kafka.recomendaciones.repository;
 
 import mx.com.kafka.recomendaciones.model.Libro;
 import mx.com.kafka.recomendaciones.model.Usuario;
