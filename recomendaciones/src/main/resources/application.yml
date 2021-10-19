@@ -1,0 +1,35 @@
+spring:
+  security:
+    oauth:
+      grantTypes: password,refresh_token
+      refreshTokenValiditySeconds: '9600'
+      accessTokenValiditySeconds: '9600'
+      clientSecret: k4fk4
+      clientId: kafka
+      scopes: read,write
+    user:
+      password: p4ssw0rd
+      name: admin
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    initialization-mode: always
+    username: sa
+    url: jdbc:h2:mem:testdb
+    platform: h2
+  jpa:
+    defer-datasource-initialization: 'true'
+    database-platform: org.hibernate.dialect.H2Dialect
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+        SQL: DEBUG
+server:
+  error:
+    include-binding-errors: always
+    include-message: always

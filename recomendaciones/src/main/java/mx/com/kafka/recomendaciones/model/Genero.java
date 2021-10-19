@@ -5,12 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
@@ -18,13 +16,17 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Genero {
+public class Genero implements Serializable {
+    private static final long serialVersionUID = -1308234102080659373L;
     @Id
-    @GeneratedValue
     @Positive
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idGenero;
     @NotEmpty
     private String genero;
-    @ManyToMany
+    @ManyToMany(mappedBy = "generosLibro")
     private List<Libro> libros;
+
+    @ManyToMany(mappedBy = "generosUsuario")
+    private List<Usuario> generosUsuario;
 }

@@ -10,6 +10,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
@@ -17,22 +18,41 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Usuario {
+public class Usuario implements Serializable {
+    private static final long serialVersionUID = 2463516973461824241L;
     @Id
-    @GeneratedValue
+    @Positive
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUsuario;
     @NotEmpty
     private String nombre;
     @NotEmpty
     @Email
-    @Column(unique=true)
+    @Column(unique = true)
     private String correo;
     @Positive
     private Integer edad;
     @NotEmpty
     private String password;
+
     @ManyToMany
-    private List <Genero> generos;
+    @JoinTable(
+            name = "usuario_genero",
+            joinColumns = @JoinColumn(name = " id_usuario"),
+            inverseJoinColumns = @JoinColumn(name = "id_genero")
+    )
+    private List<Genero> generosUsuario;
+
+
+//    @ManyToMany
+//    @JoinTable(
+//            name = "usuario_libro",
+//            joinColumns = @JoinColumn(name = " id_usuario"),
+//            inverseJoinColumns = @JoinColumn(name = "id_libro")
+//    )
+//    private List<Libro> librosUsuario;
+
+
     @Builder.Default
     @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
     private boolean expiredAccount = false;
@@ -46,8 +66,8 @@ public class Usuario {
     private boolean expiredCredentials = false;
 
     @Builder.Default
-    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
-    private boolean enabled = false;
+    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT true")
+    private boolean enabled = true;
 
     @NotEmpty
     @Enumerated(EnumType.STRING)
