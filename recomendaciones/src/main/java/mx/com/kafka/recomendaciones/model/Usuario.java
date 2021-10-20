@@ -6,14 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.kafka.recomendaciones.constant.Role;
-import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 import java.io.Serializable;
-import java.util.Set;
 
 @Data
 @Builder
@@ -45,14 +43,14 @@ public class Usuario implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "usuario_genero",
-            joinColumns = @JoinColumn(name = " id_usuario"),
-            inverseJoinColumns = @JoinColumn(name = "id_genero")
-    )
-    private Set<Genero> generosUsuario;
+//    @JsonIgnore
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @JoinTable(
+//            name = "usuario_genero",
+//            joinColumns = @JoinColumn(name = " id_usuario"),
+//            inverseJoinColumns = @JoinColumn(name = "id_genero")
+//    )
+//    private Set<Genero> generosUsuario;
 
     @Builder.Default
     @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")

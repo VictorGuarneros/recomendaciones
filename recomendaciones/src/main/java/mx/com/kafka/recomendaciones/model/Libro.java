@@ -4,13 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 import java.io.Serializable;
-import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -48,14 +46,14 @@ public class Libro implements Serializable {
     @NotEmpty
     private String formato;
 
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "libro_genero",
-            joinColumns = @JoinColumn(name = " id_libro"),
-            inverseJoinColumns = @JoinColumn(name = "id_genero")
-    )
-    private Set<Genero> generosLibro;
+//    @JsonIgnore
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @JoinTable(
+//            name = "libro_genero",
+//            joinColumns = @JoinColumn(name = " id_libro"),
+//            inverseJoinColumns = @JoinColumn(name = "id_genero")
+//    )
+//    private Set<Genero> generosLibro;
 
     @Builder.Default
     @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT true")

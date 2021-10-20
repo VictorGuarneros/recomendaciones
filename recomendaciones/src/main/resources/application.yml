@@ -10,6 +10,9 @@ spring:
     user:
       password: p4ssw0rd
       name: admin
+  data:
+    rest:
+      basePath: /api
   datasource:
     driverClassName: org.h2.Driver
     password: password
@@ -22,10 +25,10 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
-        show_sql: true
-        use_sql_comments: true
-        format_sql: true
-    show_sql: true
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false
+    show_sql: false
 logging:
   level:
     org:

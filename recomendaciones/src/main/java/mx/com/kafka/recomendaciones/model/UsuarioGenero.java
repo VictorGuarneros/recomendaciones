@@ -4,11 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import mx.com.kafka.recomendaciones.model.id.UsuarioLibroId;
+import mx.com.kafka.recomendaciones.model.id.UsuarioGeneroId;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
@@ -17,12 +15,11 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class UsuarioLibro implements Serializable {
-
-    private static final long serialVersionUID = -7106820489523351253L;
+public class UsuarioGenero implements Serializable {
+    private static final long serialVersionUID = -1324208396134537691L;
 
     @EmbeddedId
-    private UsuarioLibroId usuarioLibroId;
+    private UsuarioGeneroId usuarioGeneroId;
 
     @NotNull
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
@@ -32,12 +29,8 @@ public class UsuarioLibro implements Serializable {
 
     @NotNull
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @MapsId("id_libro")
-    @JoinColumn(name = "id_libro")
-    private Libro libro;
-
-    @Max(10)
-    @Min(1)
-    private Integer puntuacion;
+    @MapsId("id_genero")
+    @JoinColumn(name = "id_genero")
+    private Genero genero;
 
 }

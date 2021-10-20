@@ -4,13 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 import java.io.Serializable;
-import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -28,12 +26,4 @@ public class Genero implements Serializable {
     @NotEmpty
     @Column(unique = true)
     private String genero;
-
-    @JsonIgnore
-    @ManyToMany(mappedBy = "generosLibro", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<Libro> libros;
-
-    @JsonIgnore
-    @ManyToMany(mappedBy = "generosUsuario", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<Usuario> generosUsuario;
 }
