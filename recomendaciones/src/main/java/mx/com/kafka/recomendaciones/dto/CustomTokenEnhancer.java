@@ -17,6 +17,7 @@ public class CustomTokenEnhancer implements TokenEnhancer {
         properties.put("name", user.getUser().getNombre());
         properties.put("edad", user.getUser().getEdad());
         properties.put("rol", user.getUser().getRole());
+        properties.put("idUsuario", user.getUser().getIdUsuario());
         ((DefaultOAuth2AccessToken) oAuth2AccessToken).setAdditionalInformation(properties);
         return oAuth2AccessToken;
     }
