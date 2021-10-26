@@ -5,54 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf80b87b-23a7-4f55-aad3-c787be6f77fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/OauthAccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/OauthRefreshToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/UsuarioRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/RepositoryRestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/converter/GeneroLibroIdConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/converter/UsuarioGeneroIdConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/CustomTokenEnhancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Calificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/CalificacionRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/Yomogi-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/home_rec.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/home_usr.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/registro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/sesion.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/signin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/bootstrap-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/fondo_inicio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/fondo_principal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/inicio1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/inicio2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/img/logoclr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/integrar-bp/home_rec.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/integrar-bp/home_usr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/integrar-bp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/integrar-bp/registro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/integrar-bp/sesion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/js/home_rec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/js/home_user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/js/jquery-3.6.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-frontend/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-frontend/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/RecomendacionesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/RecomendacionesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/AuthorizationServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/GeneroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/GeneroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/LibroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/LibroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/GeneroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/GeneroRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/LibroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/LibroRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/UsuarioLibroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/UsuarioLibroRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dao/UsuarioRepositorio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/LibroDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/LibroDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UsuarioDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/GeneroDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/GeneroDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/dto/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/GeneroLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/GeneroLibro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Libro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioLibro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioGenero.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioGenero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/UsuarioLibro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/model/id/UsuarioLibroId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/GeneroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/GeneroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/LibroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/LibroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/java/mx/com/kafka/recomendaciones/repository/UsuarioLibroRepositorio.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recomendaciones/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendaciones/src/test/java/mx/com/kafka/recomendaciones/RecomendacionesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/recomendaciones/src/test/java/mx/com/kafka/recomendaciones/RecomendacionesApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +43,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -106,6 +88,50 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/recomendaciones" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mx.com.kafka.recomendaciones.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RecomendacionesApplicationTests.contextLoads">
+    <configuration name="RecomendacionesApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recomendaciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.com.kafka.recomendaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.com.kafka.recomendaciones" />
+      <option name="MAIN_CLASS_NAME" value="mx.com.kafka.recomendaciones.RecomendacionesApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecomendacionesApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recomendaciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.com.kafka.recomendaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx.com.kafka.recomendaciones" />
+      <option name="MAIN_CLASS_NAME" value="mx.com.kafka.recomendaciones.RecomendacionesApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RecomendacionesApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.RecomendacionesApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

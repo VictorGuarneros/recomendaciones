@@ -6,8 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.kafka.recomendaciones.model.id.UsuarioGeneroId;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 import java.io.Serializable;
 
 @Data
@@ -21,16 +21,25 @@ public class UsuarioGenero implements Serializable {
     @EmbeddedId
     private UsuarioGeneroId usuarioGeneroId;
 
-    @NotNull
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @MapsId("id_usuario")
-    @JoinColumn(name = "id_usuario")
-    private Usuario usuario;
+    public Integer getIdUsuario() {
+        return usuarioGeneroId.getIdUsuario();
+    }
 
-    @NotNull
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @MapsId("id_genero")
-    @JoinColumn(name = "id_genero")
-    private Genero genero;
+    public Integer getIdGenero() {
+        return usuarioGeneroId.getIdGenero();
+    }
+
+
+//    @NotNull
+//    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @MapsId("id_usuario")
+//    @JoinColumn(name = "id_usuario")
+//    private Usuario usuario;
+//
+//    @NotNull
+//    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @MapsId("id_genero")
+//    @JoinColumn(name = "id_genero")
+//    private Genero genero;
 
 }

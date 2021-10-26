@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.kafka.recomendaciones.model.Libro;
 
-import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
@@ -18,4 +17,6 @@ public class GeneroDto {
     @NotEmpty
     private String genero;
     private List<Libro> libros;
+
+
 }

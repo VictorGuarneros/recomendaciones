@@ -45,18 +45,5 @@ public class Libro implements Serializable {
 
     @NotEmpty
     private String formato;
-
-//    @JsonIgnore
-//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JoinTable(
-//            name = "libro_genero",
-//            joinColumns = @JoinColumn(name = " id_libro"),
-//            inverseJoinColumns = @JoinColumn(name = "id_genero")
-//    )
-//    private Set<Genero> generosLibro;
-
-    @Builder.Default
-    @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT true")
-    private boolean enabled = true;
-
+    
 }

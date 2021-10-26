@@ -43,15 +43,6 @@ public class Usuario implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-//    @JsonIgnore
-//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JoinTable(
-//            name = "usuario_genero",
-//            joinColumns = @JoinColumn(name = " id_usuario"),
-//            inverseJoinColumns = @JoinColumn(name = "id_genero")
-//    )
-//    private Set<Genero> generosUsuario;
-
     @Builder.Default
     @Column(nullable = false, columnDefinition = "BOOLEAN DEFAULT false")
     private boolean expiredAccount = false;

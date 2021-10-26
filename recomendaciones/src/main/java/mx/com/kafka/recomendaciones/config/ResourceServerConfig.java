@@ -32,10 +32,12 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http//
+                .csrf().disable()
                 .authorizeRequests()//
-                .antMatchers(HttpMethod.POST, "/oauth/**", "/usuarios").permitAll() //
-                .antMatchers(HttpMethod.POST, "/libros", "/generos").hasAuthority("ADMINISTRATOR") //
-                .antMatchers(HttpMethod.PUT, "/libros", "/generos").hasAuthority("ADMINISTRATOR") //
+                .antMatchers(HttpMethod.GET, "/oauth/**").permitAll() //
+                .antMatchers(HttpMethod.POST, "/oauth/**").permitAll() //
+                .antMatchers(HttpMethod.OPTIONS, "/oauth/**").permitAll() //
+                .antMatchers("/swagger-ui/**").permitAll()
                 .anyRequest().authenticated() //
                 .and().cors().configurationSource(getConfigurationSource());
     }
