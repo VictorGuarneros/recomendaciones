@@ -39,7 +39,6 @@ INSERT INTO usuario_genero(id_usuario, id_genero) VALUES(1, 3);
 
 --INSERT INTO calificacion(puntuacion, id_usuario, id_libro) VALUES(10, 1, 3);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(1, 1, 9);
-INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(2, 1, 8);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(2, 1, 9);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(3, 1, 10);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(4, 1, 9);
@@ -50,3 +49,10 @@ INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(8, 1, 6);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(9, 1, 9);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(10, 1, 10);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(11, 1, 9);
+
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(1, 2, 9);
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(3, 2, 10);
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(5, 2, 8);
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(7, 2, 8);
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(9, 2, 9);
+INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(11, 2, 9);
