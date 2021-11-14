@@ -14,18 +14,18 @@ INSERT INTO genero(genero) VALUES ('novela');
 INSERT INTO genero(genero) VALUES ('terror');
 INSERT INTO genero(genero) VALUES ('ficción');
 
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(1, 1);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(1, 2);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(2, 2);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(3, 2);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(4, 1);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(5, 3);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(6, 3);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(7, 2);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(8, 1);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(9, 1);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(10, 1);
-INSERT INTO libro_genero(id_libro, id_genero) VALUES(11, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(1, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(1, 2);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(2, 2);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(3, 2);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(4, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(5, 3);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(6, 3);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(7, 2);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(8, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(9, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(10, 1);
+INSERT INTO genero_libro(id_libro, id_genero) VALUES(11, 1);
 
 INSERT INTO usuario(correo, edad, nombre, password, role, enabled)
 VALUES ('admin@gmail.com', 25, 'Victor Guarneros', '$2a$12$yxm5UiGOfcKCMNqef/ks1e/PIy2JSex8evS1BLCrQQY.WsCg3HJti', 'ADMINISTRATOR', 1);
@@ -37,7 +37,7 @@ INSERT INTO usuario_genero(id_usuario, id_genero) VALUES(1, 1);
 INSERT INTO usuario_genero(id_usuario, id_genero) VALUES(1, 2);
 INSERT INTO usuario_genero(id_usuario, id_genero) VALUES(1, 3);
 
---INSERT INTO calificacion(puntuacion, id_usuario, id_libro) VALUES(10, 1, 3);
+INSERT INTO calificacion(puntuacion, id_usuario, id_libro) VALUES(10, 1, 3);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(1, 1, 9);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(2, 1, 9);
 INSERT INTO calificacion(id_libro, id_usuario, puntuacion) VALUES(3, 1, 10);
