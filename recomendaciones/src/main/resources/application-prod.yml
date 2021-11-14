@@ -1,10 +1,10 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: 22b5a6f5
+    password: ${CLEARDB_DATABASE_PASSWORD:password}
     initialization-mode: never
-    username: b8b4c8a4f2ee20
-    url: ${CLEARDB_DATABASE_URL}
+    username: ${CLEARDB_DATABASE_USERNAME:username}
+    url: ${CLEARDB_DATABASE_URL:url}
   jpa:
     generate-ddl: false
     defer-datasource-initialization: 'true'
