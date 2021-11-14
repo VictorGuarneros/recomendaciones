@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: 22b5a6f5
+    initialization-mode: never
+    username: b8b4c8a4f2ee20
+    url: ${CLEARDB_DATABASE_URL}
+  jpa:
+    generate-ddl: false
+    defer-datasource-initialization: 'true'
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false
+    show_sql: false

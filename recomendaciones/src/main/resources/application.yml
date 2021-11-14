@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: ${PROFILE:dev}
   security:
     oauth:
       grantTypes: password,refresh_token
@@ -13,22 +15,6 @@ spring:
   data:
     rest:
       basePath: /api
-  datasource:
-    driverClassName: org.h2.Driver
-    password: password
-    initialization-mode: always
-    username: sa
-    url: jdbc:h2:mem:testdb
-    platform: h2
-  jpa:
-    defer-datasource-initialization: 'true'
-    database-platform: org.hibernate.dialect.H2Dialect
-    properties:
-      hibernate:
-        show_sql: false
-        use_sql_comments: false
-        format_sql: false
-    show_sql: false
 logging:
   level:
     org:
