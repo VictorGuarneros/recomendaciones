@@ -37,6 +37,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/oauth/**").permitAll() //
                 .antMatchers(HttpMethod.POST, "/oauth/**").permitAll() //
                 .antMatchers(HttpMethod.OPTIONS, "/oauth/**").permitAll() //
+                .antMatchers(HttpMethod.GET, "/api/generos/**").permitAll() //
+                .antMatchers(HttpMethod.POST, "/api/usuarios/**").permitAll() //
+                .antMatchers(HttpMethod.POST, "/api/usuariosgeneros/**").permitAll()
                 .antMatchers("/swagger-ui/**").permitAll()
                 .anyRequest().authenticated() //
                 .and().cors().configurationSource(getConfigurationSource());
